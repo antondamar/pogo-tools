@@ -12,7 +12,10 @@ build/
 .pytest_cache/
 .idea/
 .vscode/
+dumps/
+
 coret-coret.py
 type_ranker.py
+
 upload_sql
 latest.json
