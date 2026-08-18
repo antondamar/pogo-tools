@@ -4,6 +4,8 @@ A Streamlit app for tracking your Pokemon GO storage, IVs, and battle recommenda
 
 You create an account, add Pokemon from your inventory, and browse them on a dashboard.
 
+https://pogo-tools.streamlit.app/
+
 ---
 
 ## What you need
