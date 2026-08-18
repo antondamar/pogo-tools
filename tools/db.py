@@ -9,7 +9,8 @@ from psycopg2.pool import ThreadedConnectionPool
 
 load_dotenv()
 
-DB_URL = os.getenv("LOCAL_DATABASE_URL") or os.getenv("NEON_DATABASE_URL")
+# DB_URL = os.getenv("LOCAL_DATABASE_URL")
+DB_URL = os.getenv("NEON_DATABASE_URL")
 
 _MIN_CONN = 1
 _MAX_CONN = 5
