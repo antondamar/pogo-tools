@@ -76,7 +76,7 @@ def calculate_cp_from_level(level, base_attack, base_defense, base_stamina, atk_
 
 
 def build_mega_variant(pokemon: dict, mega_species: dict) -> dict:
-    variant = pokemon
+    variant = dict(pokemon)
     variant["base_attack"] = mega_species["base_attack"]
     variant["base_defense"] = mega_species["base_defense"]
     variant["base_stamina"] = mega_species["base_stamina"]
@@ -98,7 +98,7 @@ def build_mega_variant(pokemon: dict, mega_species: dict) -> dict:
 
 
 def expand_pokemon_variants(pokemon: dict, mega_forms: list[dict], include_mega: bool) -> list[dict]:
-    variants = [pokemon]
+    variants = [dict(pokemon)]
     if include_mega:
         for mega_species in mega_forms:
             variants.append(build_mega_variant(pokemon, mega_species))

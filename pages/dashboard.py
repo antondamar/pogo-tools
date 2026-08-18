@@ -707,9 +707,8 @@ def _format_effectiveness(score):
 
 
 def _is_mega_or_primal(p) -> bool:
-    # Mega/Primal is tagged on nickname by battle._score_pokemon_variant, not species
-    name = p.get("nickname") or ""
-    return "Mega" in name or "Primal" in name
+    name = p.get("form") or ""
+    return "MEGA" in name or "PRIMAL" in name
 
 
 def filter_result(res, cond):
